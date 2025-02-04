@@ -6,12 +6,15 @@
   --yellow-color: #febf00;
   --blue-color: #291e63;
   --whity-color: #fef6e9;
+  --text-color: rgba(62, 62, 62, 1);
 }
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Beiruti", serif;
+  margin: 0;
+  padding: 0;
 }
 html{
   scroll-behavior: smooth;
@@ -23,6 +26,37 @@ body {
   background-color: var(--whity-color);
 }
 
+
+/* CUSTOM CSS */
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-col {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.gap-16{
+  gap: 16px;
+}
+.gap-24{
+  gap: 24px;
+}
+.gap-32{
+  gap: 32px;
+}
+.mb-24{
+  margin-bottom: 24px;
+}
+.h-87{
+  height: 87px;
+}
+/* NAVBAR */
 nav {
     /* padding: top right bottom left */
     /* padding: top-bottom right-left */
@@ -68,25 +102,12 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-.flex {
-  display: flex;
-}
-.flex-row {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .icon-width {
   width: 56px;
   height: 56px;
 }
-.gap-16{
-  gap: 16px;
-}
-.gap-32{
-  gap: 32px;
-}
+
 
 .menu-btn {
   width: 194px;
@@ -195,4 +216,63 @@ nav ul li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+.carousel {
+  padding-top: 100.5px;
+}
+.basis-1\3 {
+  flex-basis: 33.33%;
+}
+
+.left-div{
+  display: flex;
+  flex-direction: row;
+  gap: 14.22px;
+  text-align: right;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 200px  0  0 200px;
+  padding: 10px 62.1px 10px 0;
+  width: 378px;
+  height: 107px;
+}
+
+.left-div h2{
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.left-div p {
+  color: rgba(97, 97, 97, 1);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+.left-div span{
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.left-div img {
+  width: 97.9px;
+  height: 97.9px;
+}
+
+.book-data{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: 0;
+  justify-content: space-around;
+  align-items: start;
 }
