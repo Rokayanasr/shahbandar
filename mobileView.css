@@ -1,0 +1,8 @@
+nav{
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 63px;
+    width: 69px;
+}
