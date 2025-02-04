@@ -6,3 +6,11 @@ nav .logo img {
     height: 63px;
     width: 69px;
 }
+
+.cart{
+    display: block;
+}
+
+.menu-btn, .menu-icons-group{
+    display: none;
+}

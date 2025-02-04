@@ -1,82 +1,97 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mobileView.css" media="screen and (max-width: 790px)"/>
-    <title>shahbandr</title>
-  </head>
-  <body>
-    <main>
-      <!-- NAVBAR -->
 
-      <header>
-        <nav>
-          <div class="logo">
-            <img src="assets/logo.svg" alt="logo" />
-          </div>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-          </ul>
-          <div class="hamburger">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </div>
-        </nav>
-        <div class="menubar">
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mobileView.css" media="screen and (max-width: 790px)" />
+  <title>shahbandr</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <div class="cart">
+        <img src="assets/cart.svg" alt="cart" />
+      </div>
+      <div class="flex flex-row">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="logo" />
         </div>
-      </header>
-
-      <!-- MAIN SECTION -->
-      <section>
-
-        <!-- CAROUSEL -->
-        <div>
-
-          <!-- RIGHT SIDE IMAGES AND DATA -->
-          <div></div>
-
-          <!-- CENTERED IMAGE -->
-          <div></div>
-
-          <!-- LEFT SIDE IMAGES AND DATA -->
-          <div></div>
+        <ul>
+          <li>
+            <a class="menu-active menu-item" href="#">الرئيسية</a>
+          </li>
+          <li>
+            <a class="menu-item" href="#">المنتجات</a>
+          </li>
+          <li>
+            <a class="menu-item" href="#">اتمام الطلب</a>
+          </li>
+          <li>
+            <a class="menu-item" href="#">من نحن</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-icons-group flex flex-row gap-32">
+        <div class="flex flex-row gap-16">
+          <img class="icon-width" src="assets/search.svg" alt="search" />
+          <img src="assets/heart.svg" alt="favorite">
+          <img src="assets/cart.svg" alt="cart">
         </div>
+        <button class="menu-btn flex flex-row">
+          <img src="assets/User.svg" alt="user">
+          <span>تسجيل الدخول</span>
+        </button>
+      </div>
+      <div class="hamburger">
+        <img src="assets/hamburger.svg" alt="">
+      </div>
+    </nav>
+    <div class="menubar hide">
+      <ul>
+        <li>
+          <a class="menu-item" href="#">الرئيسية</a>
+        </li>
+        <li>
+          <a class="menu-item" href="#">المنتجات</a>
+        </li>
+        <li>
+          <a class="menu-item" href="#">اتمام الطلب</a>
+        </li>
+        <li>
+          <a class="menu-item" href="#">من نحن</a>
+        </li>
+      </ul>
+    </div>
+  </header>
 
-        <!-- BUTTON AND IMG -->
-        <div></div>
+  <!-- MAIN SECTION -->
+  <main class="main">
 
-      </section>
+    <!-- CAROUSEL -->
+    <div class="carousel">
 
-      <!-- END -->
-    </main>
-    <script src="script.js"></script>
-  </body>
+      <!-- RIGHT SIDE IMAGES AND DATA -->
+      <div class="left-data"></div>
+
+      <!-- CENTERED IMAGE -->
+      <div class="center-data"></div>
+
+      <!-- LEFT SIDE IMAGES AND DATA -->
+      <div class="right-data"></div>
+
+    </div>
+
+    <!-- BUTTON AND IMG -->
+    <div></div>
+
+  </main>
+
+  <!-- END -->
+  <script src="script.js"></script>
+</body>
+
 </html>
