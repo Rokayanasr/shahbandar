@@ -27,8 +27,8 @@ window.onload = () => {
             let rightDiv = document.createElement("div");
 
             if (book.id <= 4) {
-                leftDiv.classList.add("active-left-div", "mb-24");
-                leftDiv.innerHTML = `
+                rightDiv.classList.add("active-right-div", "mb-24");
+                rightDiv.innerHTML = `
                 <div class='book-data'>
                   <h2>${book.title}</h2>
                   <p>${book.description}</p>
@@ -39,8 +39,8 @@ window.onload = () => {
             }
 
             if (book.id > 4) {
-                rightDiv.classList.add("right-div", "mb-24");
-                rightDiv.innerHTML = `
+                leftDiv.classList.add("left-div", "mb-24");
+                leftDiv.innerHTML = `
                 <img src=${book.image} alt=${"img" + book.id} />
                 <div class='book-data'>
                   <h2>${book.title}</h2>
@@ -50,7 +50,7 @@ window.onload = () => {
             `;
             }
 
-            const activeDiv = document.querySelector(".active-left-div");
+            const activeDiv = document.querySelector(".active-right-div");
             leftData.appendChild(leftDiv);
             rightData.appendChild(rightDiv);
         });
