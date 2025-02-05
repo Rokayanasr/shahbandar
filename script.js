@@ -27,7 +27,7 @@ window.onload = () => {
             let rightDiv = document.createElement("div");
 
             if (book.id <= 4) {
-                leftDiv.classList.add("left-div", "mb-24");
+                leftDiv.classList.add("active-left-div", "mb-24");
                 leftDiv.innerHTML = `
                 <div class='book-data'>
                   <h2>${book.title}</h2>
@@ -50,6 +50,7 @@ window.onload = () => {
             `;
             }
 
+            const activeDiv = document.querySelector(".active-left-div");
             leftData.appendChild(leftDiv);
             rightData.appendChild(rightDiv);
         });
