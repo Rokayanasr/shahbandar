@@ -225,7 +225,7 @@ nav ul li a:hover {
   flex-basis: 33.33%;
 }
 
-.left-div{
+.left-div {
   display: flex;
   flex-direction: row;
   gap: 14.22px;
@@ -267,7 +267,9 @@ nav ul li a:hover {
   width: 97.9px;
   height: 97.9px;
 }
-
+.active-left-div{
+  background: linear-gradient();
+}
 .book-data{
   display: flex;
   flex-direction: column;
@@ -275,4 +277,50 @@ nav ul li a:hover {
   gap: 0;
   justify-content: space-around;
   align-items: start;
+}
+
+.right-div{
+  display: flex;
+  flex-direction: row;
+  gap: 14.22px;
+  text-align: right;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0 200px 200px 0 ;
+  padding: 10px 0 10px 62.1px ;
+  width: 378px;
+  height: 107px;
+}
+
+.active-right-div{
+
+}
+.right-div h2{
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.right-div p {
+  color: rgba(97, 97, 97, 1);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+.right-div span{
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.right-div img {
+  width: 97.9px;
+  height: 97.9px;
 }
